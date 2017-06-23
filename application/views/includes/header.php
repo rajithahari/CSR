@@ -30,7 +30,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		if(@$this->session->userdata['user']['username']){?>
 			<ul class="nav nav-tabs">
 				<li class="<?=strpos($_SERVER['REQUEST_URI'],'dashboard')?'active':''?>"><a href="<?=base_url().'user/dashboard'?>">Dashboard</a></li>
-				<li class="<?=strpos($_SERVER['REQUEST_URI'],'ticket/create') || strpos($_SERVER['REQUEST_URI'],'ticket/view')?'active':''?>"><a href="<?=base_url().'ticket/create'?>"><?=strpos($_SERVER['REQUEST_URI'],'ticket/view')?'View':'Create'?> Ticket</a></li>
+				<li class="<?=strpos($_SERVER['REQUEST_URI'],'ticket/create') || strpos($_SERVER['REQUEST_URI'],'ticket/view') || strpos($_SERVER['REQUEST_URI'],'ticket/edit')?'active':''?>"><a href="<?=base_url().'ticket/create'?>"><?=strpos($_SERVER['REQUEST_URI'],'ticket/view') || strpos($_SERVER['REQUEST_URI'],'ticket/edit') ?'':'Create'?> Ticket</a></li>
 				<li class="<?=strpos($_SERVER['REQUEST_URI'],'logout')?'active':''?>"><a href="<?=base_url().'user/logout'?>">Logout</a></li>
 			</ul>
 			<br><?php

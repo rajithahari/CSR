@@ -1,4 +1,4 @@
-<div class="container" ng-app="myApp">    
+<div class="container" ng-app="ticketApp">    
     <div style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
 		<div class="panel panel-info" >
 			<div class="panel-heading">
@@ -14,6 +14,7 @@
 	        		<p><span>Email</span> : {{ticket.ticket.email}}</p>
 	        		<p><span>Phone</span> : {{ticket.ticket.phone}}</p>
 	        		<p><span>Status</span> : <span ng-if='ticket.ticket.status == 1'>New</span><span ng-if='ticket.ticket.status == 0'>Attended</span></p>
+	        		<p ng-if='ticket.ticket.department'><span>Department</span>:{{ticket.ticket.department}}</p>
 	        		<p><span>Created</span> : {{ticket.ticket.created | date}}</p>
 	        	</fieldset>
 	        </div>

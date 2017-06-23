@@ -1,4 +1,4 @@
-<div class="container" ng-app="myApp">    
+<div class="container" ng-app="ticketApp">    
     <div style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
 		<div class="panel panel-info" >
 			<div class="panel-heading">
@@ -34,12 +34,14 @@
 
                         <div class="col-sm-12 controls">
                           <button type="submit" class="btn btn-primary">Create</button>
-                          <button class="btn btn-submit">Escalate</button>      
+                                
                     	</div>
                     </div>                                
 				</form>
             </div>                     
-        </div>  
+        </div> 
+
+		</div> 
     </div>
 </div>
     

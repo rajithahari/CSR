@@ -23,7 +23,7 @@ function UserController($scope, $http) {
 		           theme: "relax",
 		           type: 'success'
 				})){
-					window.location = '/user/dashboard'
+					window.location = 'user/dashboard'
 				}
 			}else{
 				noty({
