@@ -126,7 +126,7 @@ function TicketController($scope, $http) {
 					search : $scope.search
 				})
 			}).success(function (data) {
-				if(data.tickets.length){
+				if(data.tickets && data.tickets.length){
 					$scope.tickets = data.tickets;
 				}else{
 					noty({
@@ -136,6 +136,7 @@ function TicketController($scope, $http) {
 			           theme: "relax",
 			           type: 'error'
 					});
+					$scope.tickets = [];
 				}
 				
 			});

@@ -9,7 +9,7 @@
     			<div class="col-md-8 pull-right">
 				  	<form class="navbar-form" role="search" ng-submit="getList()">
 					    <div class="input-group">
-					      <input class="form-control" placeholder="Search by email or phone" ng-model="search" id="srch-term" type="text" required>
+					      <input class="form-control" placeholder="Search by email or phone" ng-model="search" id="srch-term" type="text" >
 					      <div class="input-group-btn">
 					        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
 					      </div>
